@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/CSS" href="css/SignUp.css">
+<script type="text/javascript" src="js/EmployeeSignupValidator.js"></script>
+</head>
+<body>
+
+	<h1>STYM BANKING</h1>
+	<h2>Please Eneter Registration Detail for Employee</h2>
+	<form action="EmployeeSignUpServlet" onsubmit="return validate()">
+		<table align="center" cellspecing="10" cellpadding="10">
+			<tr>
+				<td>Employee Name</td>
+				<td><input type="text" name="employeeName" id="employeeName" /></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="password" id="password" /></td>
+			</tr>
+			<tr>
+				<td>Confirm Password</td>
+				<td><input type="password" name="confirmpassword"
+					id="confirmpassword" /></td>
+			</tr>
+			<tr>
+				<td>Mobile Number</td>
+				<td><input type="text" name="mobileNumber" id="mobileNumber" /></td>
+			</tr>
+
+			<tr>
+				<td>Email</td>
+				<td><input type="email" name="emailId" id="emailId" /></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Register" /></td>
+				<td><input type="reset" value="Clear" /></td>
+			</tr>
+
+		</table>
+	</form>
+</body>
+</html>

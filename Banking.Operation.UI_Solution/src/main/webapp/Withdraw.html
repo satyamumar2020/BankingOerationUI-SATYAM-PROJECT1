@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+h2 {
+
+	text-align: center;
+	margin-top: 2cm;
+}
+p {
+	text-align: center;
+}
+table{
+	border-collapse:separate;
+	margin-top: 1cm;
+}
+body{
+border:solid;
+border-width:10px;
+margin-left:200px;
+margin-right:200px;
+margin-bottom:5px;
+padding-bottom:50px;
+background-color:orange;
+}
+</style>
+<script type="text/javascript" src="js/WithdrawValidator.js"></script>
+</head>
+<body>
+<a href="UserHome.html">Back</a>
+<h2> Enter AMOUNT and PASSWORD <br>to Withdraw Amount</h2>
+	<form action="WithdarwAmountServlet" onsubmit="return validate()">
+		<table align="center" cellspecing="10" cellpadding="10">
+		
+		    <tr>
+				<td>Customer Id:</td>
+				<td><input type="number" name="customerid" id="customerid" /></td>
+			</tr>
+			<tr>
+				<td>Amount:</td>
+				<td><input type="number" name="amount" id="amount" /></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Withdraw" /></td>
+				<td><input type="reset" value="Clear" /></td>
+			</tr>
+		</table>
+		</form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+h1 {
+	text-align: center;
+	margin-top: 30px;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 2cm;
+}
+p {
+	text-align: center;
+}
+a{
+  text-decoration:none;
+  border:1px solid;
+  color:navy;
+  padding:1px;
+}
+body{
+	background-color: red;
+	border: solid;
+	border-width: 10px;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 5px;
+	padding-bottom: 20px;
+}
+</style>
+<script type="text/javascript" src="js/EmployeeLoginValidator.js"></script>
+</head>
+<body bgcolor="lightgreen">
+<a href="Welcome.html">Home</a>
+<h1>STYM BANKING</h1>
+	<h2>Please Enter Your Login Details</h2>
+	<form action="EmployeeLoginServlet" onsubmit="return employeeValidate()">
+		<table align="center" cellspecing="10" cellpadding="10">
+			<tr>
+				<td>EmployeeId:</td>
+				<td><input type="number" name="employeeid" id="employeeid" /></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="password" name="password" id="password" /></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Login" /></td>
+				<td><input type="reset" value="Clear" /></td>
+			</tr>
+		</table>
+		<span>
+			<p>If You Are New Employee Please click here to Register:</p>
+			<p>
+				<a href="EmployeeSignUp.html">SignUp</a>
+			</p>
+		</span>
+		</form>
+</body>
+</html>

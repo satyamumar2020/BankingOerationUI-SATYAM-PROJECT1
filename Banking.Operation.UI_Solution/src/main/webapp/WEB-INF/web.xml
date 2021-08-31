@@ -1,0 +1,155 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+   <welcome-file-list>
+  <welcome-file>Welcome.html</welcome-file>
+  </welcome-file-list>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<display-name>LoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.project1.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SignUpServlet</servlet-name>
+  	<display-name>SignUpServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.project1.controller.SignUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EmployeeSignUpServlet</servlet-name>
+  	<display-name>EmployeeSignUpServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.project1.controller.EmployeeSignUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ViewAllCustomerServlet</servlet-name>
+  	<display-name>ViewAllCustomerServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.project1.controller.ViewAllCustomerServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ViewCustomerByIdServlet</servlet-name>
+  	<display-name>ViewCustomerByIdServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.project1.controller.ViewCustomerByIdServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EmployeeLoginServlet</servlet-name>
+  	<display-name>EmployeeLoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.project1.controller.EmployeeLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteCustomerServlet</servlet-name>
+  	<display-name>DeleteCustomerServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.project1.controller.DeleteCustomerServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ViewBalanceServlet</servlet-name>
+  	<display-name>ViewBalanceServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.project1.controller.ViewBalanceServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ExceptionServlet</servlet-name>
+  	<display-name>ExceptionServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.project1.controller.exception.ExceptionServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>TransferAmountServlet</servlet-name>
+  	<display-name>TransferAmountServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.project1.controller.TransferAmountServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DepositeAmountServlet</servlet-name>
+  	<display-name>DepositeAmountServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.project1.controller.DepositeAmountServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>WithdarwAmountServlet</servlet-name>
+  	<display-name>WithdarwAmountServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.project1.controller.WithdarwAmountServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SignUpServlet</servlet-name>
+  	<url-pattern>/SignUpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EmployeeSignUpServlet</servlet-name>
+  	<url-pattern>/EmployeeSignUpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ViewAllCustomerServlet</servlet-name>
+  	<url-pattern>/ViewAllCustomerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ViewCustomerByIdServlet</servlet-name>
+  	<url-pattern>/ViewCustomerByIdServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EmployeeLoginServlet</servlet-name>
+  	<url-pattern>/EmployeeLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteCustomerServlet</servlet-name>
+  	<url-pattern>/DeleteCustomerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ViewBalanceServlet</servlet-name>
+  	<url-pattern>/ViewBalanceServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ExceptionServlet</servlet-name>
+  	<url-pattern>/ExceptionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TransferAmountServlet</servlet-name>
+  	<url-pattern>/TransferAmountServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DepositeAmountServlet</servlet-name>
+  	<url-pattern>/DepositeAmountServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WithdarwAmountServlet</servlet-name>
+  	<url-pattern>/WithdarwAmountServlet</url-pattern>
+  </servlet-mapping>
+  
+  <error-page>
+		<error-code>404</error-code>
+		<location>/ExceptionServlet</location>
+	</error-page>
+
+<error-page>
+		<error-code>405</error-code>
+		<location>/ExceptionServlet</location>
+	</error-page>
+	
+	<error-page>
+		<exception-type>javax.servlet.ServletException</exception-type>
+		<location>/ExceptionServlet</location>
+	</error-page>
+
+<error-page>
+		<exception-type>java.lang.NumberFormatException</exception-type>
+		<location>/ExceptionServlet</location>
+	</error-page>
+	
+	<error-page>
+		<exception-type>java.lang.NullPointerException</exception-type>
+		<location>/ExceptionServlet</location>
+	</error-page>
+</web-app>
